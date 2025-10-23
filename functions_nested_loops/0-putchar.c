@@ -1,30 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/**
- * main - assigns a random number to n and prints
- * whether it is positive, negative or zero
- *
- * Return: 0
- */
+#include "main.h"
 
+/**
+ * main - affiche "_putchar" suivi d'un saut de ligne
+ *
+ * Return: toujours 0
+ */
 int main(void)
 {
-	int n;
+    char str[] = "_putchar";
+    int i;
 
-	/* Do not touch this part */
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+    for (i = 0; str[i] != '\0'; i++)
+    {
+        _putchar(str[i]);
+    }
 
-	/* Your code starts here */
-	printf("%d is ", n);
+    _putchar('\n');
 
-	if (n > 0)
-		printf("positive\n");
-	else if (n == 0)
-		printf("zero\n");
-	else
-		printf("negative\n");
-
-	return (0);
+    return (0);
 }
+
