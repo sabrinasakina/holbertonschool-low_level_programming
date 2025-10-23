@@ -1,16 +1,15 @@
 #include "main.h"
 
 /**
- * print_alphabet - affiche l'alphabet en minuscules suivi d'un saut de ligne
+ * print_alphabet - prints the alphabet in lowercase
+ *
+ * Return: void
  */
 void print_alphabet(void)
 {
-	char c = 'a';
+	char ch;
 
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-	}
+	for (ch = 'a'; ch <= 'z'; ch++)
+		_putchar(ch);
 	_putchar('\n');
 }
